@@ -1,0 +1,12 @@
+body{
+	overscroll-behavior: none;
+}
+#cp-mojisuu{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    background: dodgerblue;
+    color: #f0f0f0;
+    padding: 10px;
+    font-size: 30px;
+}

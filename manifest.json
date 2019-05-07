@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "cpmoji",
+  "short_name": "cpmoji",
+  "version": "1.0",
+  "description": "CoursePowerの文字数をカウントするよ",
+  "icons": {
+      "16": "16.png",
+      "48": "icon.png"
+  },
+
+  "content_scripts": [
+      {
+        "matches": ["*://cp.ss.senshu-u.ac.jp/*"],
+        "css": ["style.css"],
+        "js": ["jquery.min.js", "cs.js"]
+      }
+  ],
+
+  "permissions": [
+      "activeTab"
+  ]
+}
