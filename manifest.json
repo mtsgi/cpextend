@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "cpmoji",
-  "short_name": "cpmoji",
+  "name": "cpextend",
+  "short_name": "cpextend",
   "version": "1.0",
-  "description": "CoursePowerの文字数をカウントするよ",
+  "description": "CoursePowerを使いやすく拡張します",
   "icons": {
       "16": "16.png",
       "48": "icon.png"
