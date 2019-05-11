@@ -11,13 +11,16 @@
 
   "content_scripts": [
       {
-        "matches": ["*://cp.ss.senshu-u.ac.jp/*"],
+        "matches": ["*://*/*"],
         "css": ["style.css"],
         "js": ["jquery.min.js", "cs.js"]
       }
   ],
 
+  "options_page": "opt.html",
+
   "permissions": [
-      "activeTab"
+      "activeTab",
+      "storage"
   ]
 }

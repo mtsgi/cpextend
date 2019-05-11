@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CPEXTENDの設定</title>
+    <script src="./jquery.min.js"></script>
+    <script src="./opt.js"></script>
+    <style>
+        header{
+            font-size: 24px;
+            padding: 10px;
+            border-bottom: 2px solid #a0a0a0;
+        }
+        form{
+            font-size: 20px;
+            padding: 12px;
+        }
+        form #domain{
+            padding: 5px;
+            font-size: 18px;
+            border: 1px solid #303030;
+            border-radius: 4px;
+        }
+        .desc{
+            padding: 5px 0;
+            font-size: 15px;
+        }
+        header input{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            padding: 5px 10px;
+            font-size: 16px;
+            background: dodgerblue;
+            border-radius: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Settings
+        <input type="submit" value="設定を適用" id="apply">
+    </header>
+
+    <form>
+        ドメイン
+        <div class="desc">ドメインを指定します(部分一致)。</div>
+        <input type="text" id="domain">
+    </form>
+</body>
+</html>
