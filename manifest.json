@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "cpextend",
-  "short_name": "cpextend",
-  "version": "1.0",
-  "description": "CoursePowerを使いやすく拡張します",
+  "name": "Cpextend",
+  "short_name": "Cpex",
+  "version": "2.0",
+  "description": "CoursePowerを使いやすくするChrome拡張です",
   "icons": {
       "16": "16.png",
       "48": "icon.png"
@@ -17,7 +17,10 @@
       }
   ],
 
-  "options_page": "opt.html",
+  "options_ui": {
+    "page": "opt.html",
+    "chrome_style": false    
+  },
 
   "permissions": [
       "activeTab",

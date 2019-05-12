@@ -4,38 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CPEXTENDの設定</title>
+    <title>設定 - Cpex</title>
     <script src="./jquery.min.js"></script>
     <script src="./opt.js"></script>
     <style>
+        body{
+            margin: 0;
+        }
         header{
             font-size: 24px;
             padding: 10px;
+            color: #505050;
+            background: #f0f0f0;
             border-bottom: 2px solid #a0a0a0;
         }
-        form{
-            font-size: 20px;
+        .form{
             padding: 12px;
         }
-        form #domain{
+        .form:hover{
+            background: #f0f0f0;
+        }
+        .form #domain, .form #disp-size{
             padding: 5px;
             font-size: 18px;
             border: 1px solid #303030;
             border-radius: 4px;
         }
+        .form select{
+            margin-right: 10px;
+            padding: 2px 15px;
+            width: 80px;
+            height: 40px;
+            font-size: 15px;
+            border: 1px solid #909090;
+        }
+        .form-title{
+            font-size: 20px;
+            padding: 2px 10px;
+            border-bottom: 2px solid dodgerblue;
+            border-left: 12px solid dodgerblue;
+        }
+        .form-content{
+            padding-top: 4px;
+            padding-left: 22px;
+        }
         .desc{
             padding: 5px 0;
             font-size: 15px;
         }
-        header input{
+        header #apply{
             position: absolute;
-            right: 10px;
-            top: 10px;
+            right: 6px;
+            top: 6px;
             padding: 5px 10px;
             font-size: 16px;
             background: dodgerblue;
             border-radius: 5px;
             color: white;
+            outline: none;
+        }
+        #popup{
+            display: none;
+            font-size: 18px;
+            position: absolute;
+            background: #ffffff;
+            border-radius: 5px;
+            padding: 15px;
+            top: 24px;
+            box-sizing: border-box;
+            left: 15%;
+            width: 70%;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        }
+
+        #popup-div{
+            text-align: right;
+        }
+
+        #popup a{
+            cursor: pointer;
+            color: #f0f0f0;
+            border-radius: 5px;
+            padding: 2px 12px;
+            display: inline-block;
+            text-align: right;
+            background: dodgerblue;
         }
     </style>
 </head>
@@ -45,10 +98,47 @@
         <input type="submit" value="設定を適用" id="apply">
     </header>
 
-    <form>
-        ドメイン
-        <div class="desc">ドメインを指定します(部分一致)。</div>
-        <input type="text" id="domain">
-    </form>
+    <div class="form">
+        <div class="form-title">ドメイン</div>
+        <div class="form-content">
+            <div class="desc">ドメインを指定します(部分一致)。</div>
+            <input type="text" id="domain">
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="form-title">ウィジェット設定</div>
+        <div class="form-content">
+            <!--
+            <div class="desc">表示位置を指定します。</div>
+            <select id="disp-x">
+                <option value="left">左</option>
+                <option value="right" selected>右</option>
+            </select>
+            <select id="disp-y">
+                <option value="top">上</option>
+                <option value="bottom" selected>下</option>
+            </select>
+            -->
+            <div class="desc">フォントサイズを指定します。</div>
+            <input type="text" value="30px" id="disp-size">
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="form-title">自動オープン</div>
+        <div class="form-content">
+            <div class="desc">教材ページのアコーディオンメニューを自動でオープンします。</div>
+            <select id="open">
+                <option value="true">有効</option>
+                <option value="false" selected>無効</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="popup">
+        <div id="popup-text"></div>
+        <div id="popup-div"><a>OK</a></div>
+    </div>
 </body>
 </html>
