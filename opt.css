@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+}
+header{
+    font-size: 24px;
+    padding: 10px;
+    color: #505050;
+    background: #f0f0f0;
+    border-bottom: 2px solid #a0a0a0;
+}
+.form{
+    padding: 12px;
+}
+.form:hover{
+    background: #f0f0f0;
+}
+.form #domain, .form #disp-size{
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid #303030;
+    border-radius: 4px;
+}
+.form select{
+    margin-right: 10px;
+    padding: 2px 15px;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid #909090;
+}
+.form-title{
+    font-size: 18px;
+    padding: 2px 10px;
+    border-bottom: 2px solid dodgerblue;
+    border-left: 12px solid dodgerblue;
+}
+.form-content{
+    padding-top: 4px;
+    padding-left: 22px;
+}
+.desc{
+    padding: 5px 0;
+    font-size: 15px;
+}
+header #apply{
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background: dodgerblue;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+#popup{
+    display: none;
+    font-size: 18px;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    top: 24px;
+    box-sizing: border-box;
+    left: 15%;
+    width: 70%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#popup-div{
+    text-align: right;
+}
+
+#popup a{
+    cursor: pointer;
+    color: #f0f0f0;
+    border-radius: 5px;
+    padding: 2px 12px;
+    display: inline-block;
+    text-align: right;
+    background: dodgerblue;
+}
