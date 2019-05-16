@@ -7,7 +7,7 @@ $( function() {
         if( items.cpex_open ) $("#open").val( items.cpex_open );
         if( items.cpex_disp_size ) $("#disp-size").val( items.cpex_disp_size );
         if( items.cpex_name ) $("#disp-name").val( items.cpex_name );
-        if( items.cpex_title ) $("#disp-name").val( items.cpex_title );
+        if( items.cpex_title ) $("#disp-title").val( items.cpex_title );
     });
     $("#apply").on("click", function(){
         chrome.storage.sync.set({
