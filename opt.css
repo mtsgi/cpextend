@@ -14,7 +14,7 @@ header{
 .form:hover{
     background: #f0f0f0;
 }
-.form #domain, .form #disp-size{
+.form #domain, .form #disp-size, .form #disp-name, .form #disp-title{
     padding: 5px;
     font-size: 18px;
     border: 1px solid #303030;

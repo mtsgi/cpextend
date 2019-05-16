@@ -7,7 +7,11 @@ chrome.storage.sync.get( null, function( items ) {
             location.pathname = "/lms/lginLgir/";
         }
 
-        if( items.cpex_disp_size ) $("#cp-mojisuu").css("font-size", String(items.cpex_disp_size) )
+        if( items.cpex_disp_size ) $("#cp-mojisuu").css("font-size", String(items.cpex_disp_size) );
+
+        if( items.cpex_name ) document.forms.logoutActionForm.getElementsByTagName("li")[0].innerHTML = items.cpex_name;
+
+        document.title = items.cpex_title || document.title;
 
         if( items.cpex_disp_x ){
             if( items.cpex_disp_x == "left" ) $("#cp-mojisuu").css("left", "0").css("right", "auto");
