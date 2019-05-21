@@ -8,6 +8,7 @@ $( function() {
         if( items.cpex_disp_size ) $("#disp-size").val( items.cpex_disp_size );
         if( items.cpex_name ) $("#disp-name").val( items.cpex_name );
         if( items.cpex_title ) $("#disp-title").val( items.cpex_title );
+        if( items.cpex_attend ) $("#attend").val( items.cpex_attend );
     });
     $("#apply").on("click", function(){
         chrome.storage.sync.set({
@@ -17,7 +18,8 @@ $( function() {
             cpex_open : $("#open").val(),
             cpex_disp_size : $("#disp-size").val(),
             cpex_name : $("#disp-name").val(),
-            cpex_title : $("#disp-title").val()
+            cpex_title : $("#disp-title").val(),
+            cpex_attend : $("#attend").val()
         });
         $("#popup-text").text("設定を適用しました。");
         $("#popup").fadeIn(100);

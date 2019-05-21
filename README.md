@@ -1,7 +1,7 @@
 # cpextend
 CoursePowerがちょっと便利になるChrome拡張
 
-![Cpex](https://i.imgur.com/2XB2Tm6.png "Cpex")
+![Cpex](https://i.imgur.com/WDv89jf.png "Cpex")
 
 # features
 - 設定項目(部分一致)による多ドメイン対応
