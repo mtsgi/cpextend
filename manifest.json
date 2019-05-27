@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Cpextend",
   "short_name": "Cpex",
-  "version": "2.4",
+  "version": "2.5",
   "description": "CoursePowerを使いやすくするChrome拡張です",
   "icons": {
       "16": "16.png",

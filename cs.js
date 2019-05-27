@@ -32,8 +32,8 @@ chrome.storage.sync.get( null, function( items ) {
             $( "#cp-mojisuu" ).hide();
         } );
         
-        if( items.cpex_open == "true" && $(".cs_Bt")[1].value == "すべて開く" ){
-            $(".cs_Bt")[1].click();
+        if( items.cpex_open == "true" ){
+            if( $(".cs_Bt")[1].value == "すべて開く" || $(".cs_Bt")[1].value == "Open all" ) $(".cs_Bt")[1].click();
         }
         
         if( items.cpex_attend == "true" && $("#attend")[0].value == "出席する" ) $("#attend")[0].click();
