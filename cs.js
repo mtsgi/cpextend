@@ -50,5 +50,7 @@ chrome.storage.sync.get( null, function( items ) {
         }
 
         if( items.cpex_attend == "true" && $("#attend").last()[0] && $("#attend").last()[0].value == "出席する" ) $("#attend").last()[0].click();
+
+        $( "#loginForm input[type=text]" ).first().focus()
     }
 } );
