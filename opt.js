@@ -1,6 +1,7 @@
 
 $( function() {
-    chrome.storage.sync.get(null, function(items) {       
+    $("#cpex-ver").text( chrome.app.getDetails().version );
+    chrome.storage.sync.get(null, function(items) {    
         $("#domain").val( items.cpex_domain );
         if( items.cpex_disp_x ) $("#disp-x").val( items.cpex_disp_x );
         if( items.cpex_disp_y ) $("#disp-y").val( items.cpex_disp_y );

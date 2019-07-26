@@ -16,7 +16,6 @@ chrome.storage.sync.get( null, function( items ) {
         document.title = items.cpex_title || document.title;
 
         if( items.cpex_disp_x ){
-            console.log(items.cpex_disp_x);
             if( items.cpex_disp_x == "left" ){
                 document.getElementById("cp-mojisuu").style["left"] = 0;
                 document.getElementById("cp-mojisuu").style.right = "auto";
@@ -46,7 +45,7 @@ chrome.storage.sync.get( null, function( items ) {
         } );
         
         if( items.cpex_open == "true" ){
-            if( $(".cs_Bt")[1] && $(".cs_Bt")[1].value == "すべて開く" || $(".cs_Bt")[1].value == "Open all" ) $(".cs_Bt")[1].click();
+            if( $(".cs_Bt")[1] ) if( $(".cs_Bt")[1].value == "すべて開く" || $(".cs_Bt")[1].value == "Open all" ) $(".cs_Bt")[1].click();
         }
 
         if( items.cpex_attend == "true" && $("#attend").last()[0] && $("#attend").last()[0].value == "出席する" ) $("#attend").last()[0].click();
