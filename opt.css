@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    overscroll-behavior: none;
 }
 header{
     font-size: 24px;
@@ -7,18 +8,12 @@ header{
     color: #505050;
     background: #f0f0f0;
     border-bottom: 2px solid #a0a0a0;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
 }
 .form{
     padding: 12px;
-}
-.form:hover{
-    background: #f0f0f0;
-}
-.form #domain, .form #disp-size, .form #disp-name, .form #disp-title{
-    padding: 5px;
-    font-size: 18px;
-    border: 1px solid #303030;
-    border-radius: 4px;
 }
 .form select{
     margin-right: 10px;
@@ -26,7 +21,7 @@ header{
     width: 80px;
     height: 40px;
     font-size: 15px;
-    border: 1px solid #909090;
+    border: 1px solid #444444;
 }
 .form-title{
     font-size: 18px;
@@ -44,39 +39,23 @@ header{
 }
 header #apply{
     position: absolute;
-    right: 6px;
-    top: 6px;
-    padding: 5px 10px;
-    font-size: 16px;
-    background: dodgerblue;
-    border-radius: 5px;
-    color: white;
-    outline: none;
+    right: 8px;
+    top: 8px;
 }
 #popup{
     display: none;
     font-size: 18px;
     position: absolute;
     background: #ffffff;
-    border-radius: 5px;
     padding: 15px;
-    top: 24px;
+    position: fixed;
+    top: 0px;
     box-sizing: border-box;
-    left: 15%;
-    width: 70%;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.5);
 }
 
 #popup-div{
     text-align: right;
-}
-
-#popup a{
-    cursor: pointer;
-    color: #f0f0f0;
-    border-radius: 5px;
-    padding: 2px 12px;
-    display: inline-block;
-    text-align: right;
-    background: dodgerblue;
 }

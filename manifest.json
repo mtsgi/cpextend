@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Cpextend",
+  "name": "Cpex \"Legends\"",
   "short_name": "Cpex",
-  "version": "2.7",
+  "version": "3.0",
   "description": "CoursePowerを使いやすくするChrome拡張です",
   "icons": {
       "16": "16.png",
