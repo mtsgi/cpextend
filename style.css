@@ -1,7 +1,11 @@
-body{
-	overscroll-behavior: none;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none;
 }
-#cp-mojisuu{
+
+#cp-mojisuu {
     position: fixed;
     right: 0px;
     bottom: 0px;
@@ -9,4 +13,285 @@ body{
     color: #f0f0f0;
     padding: 10px;
     font-size: 30px;
+}
+
+body.cpex-dark {
+    background: #404040;
+}
+
+.cpex-dark a {
+    color: #bcddff;
+}
+
+.cpex-dark a:visited {
+    color: #bcddff;
+}
+
+.cpex-dark a:hover {
+    color: #66acf1;
+}
+
+.cpex-dark div#stage {
+    background: #404040;
+    color: #f0f0f0;
+    border: none;
+}
+
+.cpex-dark div#cs_loginInfo {
+    background: #404040;
+    border: none;
+}
+
+.cpex-dark #system .contents {
+    background: #404040;
+}
+
+.cpex-dark div#cs_mainInfo {
+    border: none;
+}
+
+.cpex-dark div#cs_mainInfo h3 {
+    background: none;
+    color: #ffffff;
+}
+
+.cpex-dark div#main div#title {
+    border: none;
+    margin: 1px;
+    margin-bottom: 10px;
+    background: #404040;
+}
+
+.cpex-dark div#cs_rightVox3 {
+    background: transparent;
+}
+
+.cpex-dark table.cs_table1 th {
+    background: #202020 !important;
+    color: #ffffff;
+}
+
+.cpex-dark table.cs_table1 td {
+    color: #f0f0f0;
+}
+
+.cpex-dark table.cs_table1 tr.tdBg01 {
+    background: #404040;
+}
+
+.cpex-dark div.cs_formCap {
+    background: transparent;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.cpex-dark div#side_menu li.label {
+    background: #f0f0f0;
+    color: #303030;
+}
+
+.cpex-dark #cs_login td.line img {
+    visibility: hidden;
+}
+
+.cpex-dark div#main {
+    background: #404040;
+}
+
+.cpex-dark div#footer .text {
+    background: #404040;
+    border: none;
+}
+
+.cpex-dark h2 {
+    color: dodgerblue;
+}
+
+.cpex-dark div.center_invox1 span.date1 {
+    color: #f0f0f0;
+}
+
+.cpex-dark div.center_invox1 {
+    border-bottom: 1px solid #666666;
+    padding: 6px 1px;
+}
+
+.cpex-dark div#cs_centerVox2 {
+    background: #404040;
+    color: #f0f0f0;
+}
+
+.cpex-dark table.cs_table3a td {
+    color: #f0f0f0;
+}
+
+.cpex-dark div#side_menu li.label span a:link {
+    color: dodgerblue;
+}
+
+.cpex-dark #side_menu .item a {
+    color: #c0c0c0;
+}
+
+.cpex-dark #side_menu .item a:hover {
+    color: #000000;
+}
+
+.cpex-dark div#cs_rightVox, .cpex-dark div#cs_rightTabVox {
+    background: #404040;
+    border-color: transparent;
+}
+
+.cpex-dark div#cs_tab_area li.tab_active, .cpex-dark div#cs_tab_area2 li.tab_active {
+    background: #606060;
+    border-color: transparent;
+    color: #f0f0f0;
+    border-bottom: 4px solid dodgerblue;
+}
+
+.cpex-dark div#cs_tab_area li, .cpex-dark div#cs_tab_area2 li {
+    background: transparent;
+    border-color: transparent;
+    color: #c0c0c0;
+    border-bottom: 4px solid transparent;
+}
+
+.cpex-dark div#cs_tab_area a, .cpex-dark div#cs_tab_area2 a {
+    color: #c0c0c0;
+}
+
+.cpex-dark div#cs_tab_area a:hover, .cpex-dark div#cs_tab_area2 a:hover {
+    background: #606060;
+    border-bottom: 4px solid #606060;
+}
+
+.cpex-dark div#cs_tab_area, .cpex-dark div#cs_tab_area2 {
+    border: none;
+}
+
+.cpex-dark div.cs_hideVox {
+    background: #606060;
+    color: #f0f0f0;
+}
+
+.cpex-dark tbody {
+    color: #f0f0f0;
+}
+
+.cpex-dark div.cs_hideVox_center a {
+    color: #f0f0f0;
+}
+
+.cpex-dark div#addMess strong {
+    color: dodgerblue;
+}
+
+.cpex-dark table.courseTable1 td.td03 {
+    color: #f0f0f0;
+}
+
+.cpex-dark table.courseTable1 td.td01 {
+    color: #f0f0f0;
+}
+
+.cpex-dark table.courseTable3 th.bg01 {
+    color: #f0f0f0;
+    background: #404040;
+}
+
+.cpex-dark table.cs_table2a th,
+.cpex-dark table.cs_table3a th {
+    background: #02325f;
+}
+
+.cpex-dark table.cs_table2a tr.tdBg02 td {
+    background: #4b0101;
+}
+
+.cpex-dark input.formTextMM {
+    background: #444444;
+    color: #f0f0f0;
+    padding: 2px;
+    border: 1px solid #f0f0f0;
+    border-radius: 3px;
+}
+
+/* color */
+
+.cpex-dark p.box01 {
+    margin: 0;
+    background: #222222;
+    border: none;
+}
+
+.cpex-dark p.box02 {
+    background: transparent;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.cpex-dark p.box02 img {
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 3px;
+    box-shadow: 0 1px 4px 0 black;
+}
+
+.cpex-dark span.blue1 {
+    background: dodgerblue;
+    color: white;
+    border-radius: 4px;
+    padding: 1px 4px;
+    display: inline-block;
+}
+
+.cpex-dark span.red1 {
+    background: deeppink;
+    color: white;
+    border-radius: 4px;
+    padding: 1px 4px;
+    display: inline-block;
+}
+
+.cpex-dark span.green1 {
+    background: limegreen;
+    color: white;
+    border-radius: 4px;
+    padding: 1px 4px;
+    display: inline-block;
+}
+
+.cpex-dark span.blue1 a,
+.cpex-dark span.green1 a {
+    color: white !important;
+    font-weight: bold;
+}
+
+.cpex-dark p.box06 {
+    background: #666666;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.cpex-dark h3.cs_h301 {
+    background: transparent;
+    color: #f0f0f0;
+}
+
+.cpex-dark h5.cs_h501,
+.cpex-dark h5.cs_h502 {
+    color: #f0f0f0;
+}
+
+.cpex-dark div.cs_iframe2,
+.cpex-dark div.cs_iframe {
+    border-radius: 4px;
+}
+
+.cpex-dark iframe.alpha {
+    opacity: 1;
+    background: rgba(0, 0, 0, .7);
+    backdrop-filter: blur(4px);
 }

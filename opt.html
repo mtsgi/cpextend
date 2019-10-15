@@ -8,22 +8,35 @@
     <script src="./jquery.min.js"></script>
     <script src="./opt.js"></script>
     <link rel="stylesheet" href="opt.css">
+    <link rel="stylesheet" href="https://mtsgi.github.io/kitstrap/d/kitstrap.css">
+    <link rel="stylesheet" href="https://mtsgi.github.io/kitstrap/d/kitstrap-font.css">
 </head>
 <body>
     <header>
-        設定 - Cpex
-        <input type="submit" value="設定を適用" id="apply">
+        Cpex - 設定
+        <input type="submit" value="設定を適用" id="apply" class="kit-button-alt kit-font-m">
     </header>
 
-    <div class="form">
-        バージョン<span id="cpex-ver"></span>
+    <div class="form" style="padding-top: 70px">
+        バージョン<span id="cpex-ver"></span> "Legends"
     </div>
 
     <div class="form">
         <div class="form-title">ドメイン</div>
         <div class="form-content">
             <div class="desc">ドメインを指定します(部分一致)。</div>
-            <input type="text" id="domain">
+            <input type="text" id="domain" class="textbox">
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="form-title">ダークモード</div>
+        <div class="form-content">
+            <div class="desc">CoursePowerのテーマを暗い色を基調とした目に優しいテーマにします。</div>
+            <select id="dark">
+                <option value="true">有効</option>
+                <option value="false" selected>無効</option>
+            </select>
         </div>
     </div>
 
@@ -42,15 +55,15 @@
             </select>
             
             <div class="desc">フォントサイズを指定します。</div>
-            <input type="text" value="30px" id="disp-size">
+            <input type="text" value="30px" id="disp-size" class="textbox">
         </div>
     </div>
 
     <div class="form">
-        <div class="form-title">氏名の偽装</div>
+        <div class="form-title">表示氏名の変更</div>
         <div class="form-content">
             <div class="desc">CoursePowerの氏名欄を任意の文字列に変更します(空欄で変更なし)。</div>
-            <input type="text" value="" id="disp-name">
+            <input type="text" value="" id="disp-name" class="textbox">
         </div>
     </div>
 
@@ -58,7 +71,15 @@
         <div class="form-title">タイトル変更</div>
         <div class="form-content">
             <div class="desc">ページタイトルを任意の文字列に変更します(空欄で変更なし)。</div>
-            <input type="text" value="" id="disp-title">
+            <input type="text" value="" id="disp-title" class="textbox">
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="form-title">ファビコン</div>
+        <div class="form-content">
+            <div class="desc">ファビコンとして表示したいアイコンファイルのパスを入力します(空欄で変更なし)。</div>
+            <input type="text" value="" id="favicon-path" class="textbox">
         </div>
     </div>
 
@@ -76,7 +97,7 @@
     <div class="form">
         <div class="form-title">自動出席</div>
         <div class="form-content">
-            <div class="desc">(試験的な機能)出席ボタンが有る場合自動で押下します(パスワードの入力／出席確認は手動)。</div>
+            <div class="desc">(試験的な機能)出席ボタンが有る場合自動でダイアログを表示します(パスワードの入力／出席確認は手動)。</div>
             <select id="attend">
                 <option value="true">有効</option>
                 <option value="false" selected>無効</option>
@@ -84,9 +105,19 @@
         </div>
     </div>
 
+    <blockquote class="form kit-font-m">
+        Cpexは、オープンソースソフトウェアです。GitHubリポジトリは<a href="https://github.com/mtsgi/cpextend" class="kit-hyperlink">こちら</a>。バグ報告等は<a href="https://github.com/mtsgi/cpextend/issues" class="kit-hyperlink">Issues</a>まで。
+    </blockquote>
+
+    <div class="kit-text-c">
+        <img src="./icon.png" alt="Cpex" class="kit-left">
+    </div>
+
     <div id="popup">
         <div id="popup-text"></div>
-        <div id="popup-div"><a>OK</a></div>
+        <div id="popup-div">
+            <a class="kit-button-alt kit-font-m">OK</a>
+        </div>
     </div>
 </body>
 </html>

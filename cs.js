@@ -10,8 +10,13 @@ chrome.storage.sync.get( null, function( items ) {
             location.pathname = "/lms/lginLgir/";
         }
 
+        if( items.cpex_dark == "true" ){
+            $("body").addClass("cpex-dark");
+        }
 
-        if( items.cpex_name && !document.forms.logoutActionForm.getElementsByTagName("li")[0].id ) document.forms.logoutActionForm.getElementsByTagName("li")[0].innerHTML = items.cpex_name;
+        if( items.cpex_name && !document.forms.logoutActionForm.getElementsByTagName("li")[0].id ) {
+            document.forms.logoutActionForm.getElementsByTagName("li")[0].innerHTML = items.cpex_name;
+        }
 
         document.title = items.cpex_title || document.title;
 
@@ -37,12 +42,16 @@ chrome.storage.sync.get( null, function( items ) {
         }
         if( items.cpex_disp_size ) $("#cp-mojisuu").css("font-size", String(items.cpex_disp_size) );
 
-        $( "textarea" ).on( "click keyup", function() {
+        $( "textarea" ).on( "click keyup change keydown", function() {
             $( "#cp-mojisuu" ).show();
             $( "#cp-mojisuu" ).text( this.value.length );
         } ).on( "blur", function() {
             $( "#cp-mojisuu" ).hide();
         } );
+
+        if( items.cpex_favicon ){
+            $('head').append(`<link rel="shortcut icon" type="image/x-icon" href="${items.cpex_favicon}" />`)
+        }
         
         if( items.cpex_open == "true" ){
             if( $(".cs_Bt")[1] ) if( $(".cs_Bt")[1].value == "すべて開く" || $(".cs_Bt")[1].value == "Open all" ) $(".cs_Bt")[1].click();
