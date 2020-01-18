@@ -5,6 +5,10 @@ body {
     overscroll-behavior: none;
 }
 
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
 #cp-mojisuu {
     position: fixed;
     right: 0px;
@@ -17,6 +21,12 @@ body {
 
 body.cpex-dark {
     background: #404040;
+    transition: .3s all ease;
+}
+
+.cpex-dark textarea {
+    background: transparent;
+    color: #ffffff;;
 }
 
 .cpex-dark a {
@@ -33,6 +43,7 @@ body.cpex-dark {
 
 .cpex-dark div#stage {
     background: #404040;
+    transition: .3s all ease;
     color: #f0f0f0;
     border: none;
 }
@@ -123,6 +134,11 @@ body.cpex-dark {
 
 .cpex-dark table.cs_table3a td {
     color: #f0f0f0;
+}
+
+.cpex-dark table.cs_table3b th,
+.cpex-dark div.textarea_title01 {
+    background: #3a4a6c;
 }
 
 .cpex-dark div#side_menu li.label span a:link {
